@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 680px;
+    background-color: gray;
+    padding: 20px;
+    /* Yüksekliği kaplıyor içerik */
+    display: grid;
+    gap: 10px;
+    /* Her bir grid 150px'lik sütunlara yayıldı. */
+    /* grid-template-columns: 150px 150px 150px 150px 150px 150px;  */
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    /* grid-template-columns: 150px auto auto auto auto 150px; */
+    /* FR'yi parça gibi düşün. */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr; */
+    /* Üsttekini tekrarlı yazmamak için kısayol
+    grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(3, 150px); */
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.item1 {
+    background-color: orange;
+    padding: 20px;
+}
+

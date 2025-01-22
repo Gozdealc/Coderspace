@@ -1,0 +1,84 @@
+/* PSEUDO CLASS */
+
+.link {
+    color: orange;
+}
+/* Tıkladığım an yeşil olur. */
+.link:active {
+    color: green;
+}
+/* Ziyaret edildikten sonra mora döner. */
+.link:visited {
+    color: purple;
+}
+/* Tıklamadan önce, üzerine geldiğimde mavi olur. */
+.link:hover {
+    color: blue;
+}
+
+.list_item {
+    color: pink;
+    list-style-type: none;
+    font-size: 18px;
+}
+/* ------------ İLK ELEMANA STİL UYGULAR --------- */
+/* .list_item:first-child {
+    color: green;
+} */
+
+
+ /* ------------ ÇİFT SAYILI ELEMANLARA STİL UYGULAR ---------  */
+/* .list_item:nth-child(even) {
+    color: yellow;
+} */
+
+
+.list_item1 {
+    list-style-type: none;
+    font-size: 18px;
+}
+/* ------------ SON ELEMANA STİL UYGULAR ------------- */
+/* .list_item1:last-child {
+    color: red;
+} */
+
+/* ------------ TEK SAYILI ELEMANLARA STİL UYGULAR ---------  */
+
+/* .list_item1:nth-child(odd) {
+    color: blue;
+} */
+
+/* ---------- SEÇİLEN ELEMANA STİL UYGULAR ---------- */
+
+/* .list_item1:nth-child(2) {
+    color: aqua;
+} */
+
+
+/* PSEUDO ELEMENT */
+
+.list_item::first-letter {
+    font-size: 24px;
+    color: blue;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 25px;
+}
+
+.text::first-line {
+    color: blue;
+}
+
+.text::after {
+    content: 'Merhaba, ben sona eklendim!!!';
+    color: red;
+    font-size: 30px;
+}
+
+.text::before {
+    content: 'Merhaba, ben başa eklendim!!!';
+    color: red;
+    font-size: 30px;
+}

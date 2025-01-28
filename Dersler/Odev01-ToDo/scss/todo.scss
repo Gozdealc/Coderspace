@@ -1,0 +1,101 @@
+$border-color: #5D8736;
+$bg-color: #F4FFC3;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+   header {
+    background-color: $bg-color;
+    padding: 20px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $border-color;
+   }
+   h1 {
+    font-size: 2em;
+    letter-spacing: 5px;
+   }
+    .to-do-app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        margin-inline: 25%;
+        height: 96vh;
+    
+        button {
+            background-color: $border-color;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .task-form-body, .task-form-footer, .tasks{
+            display: none; // Başlangıçta gizleniyor
+            width: 500px;
+
+            label {
+                font-weight: bold;
+                margin-top: 10px;
+            }
+    
+            input, textarea, button {
+                margin-bottom: 10px;
+            }
+        }
+    
+        .task {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+    
+            h3 {
+                font-size: 1.2rem;
+                color: #333;
+            }
+    
+            p {
+                color: #666;
+            }
+    
+            span {
+                font-size: 0.9rem;
+                color: #999;
+            }
+    
+            button {
+                margin: 15px;
+                background-color: $border-color;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: rgb(184, 12, 12);
+                }
+            }
+        }
+    }
+}
+
+
+
+// 1) butonların renkleri ve konumları ayarlanacak
+// 2) taskların editlenmesi ve silinmesi sağlanacak.
+// 3) tasklara tik atmak üstünün çizilmesi
+// 4) add new taske tıklayınca görev ekleme sayfasının gözükmesi, task sayfasında gözükmemesi
+// 5) default olarak gözüken alanın kaldırılması
+// 6) Local storage kullanarak yazılan görevlerin silinmemesi
+// 7) taskların sıralanması ve sıralanmasının sırasını kaydetmesi
